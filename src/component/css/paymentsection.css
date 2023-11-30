@@ -1,0 +1,31 @@
+.paymentsection{
+    margin-top: 100px;
+}
+.payment-inp-main{
+    display: flex;
+    justify-content: center;
+}
+.payment-inp{
+    width: 90%;
+    padding-bottom: 10px;
+    /* background-color: yellow; */
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+}
+.payment-inp input{
+    width: 100%;
+}
+.payment-inp textarea{
+    width: 100%;
+}
+.payment-inp-main2{
+    display: flex;
+    justify-content: flex-start;
+}
+
+input[type="radio"] {
+    width: 15px; 
+    height: 15px; 
+    margin-right: 5px;
+  }

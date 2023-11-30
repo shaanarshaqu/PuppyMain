@@ -1,0 +1,60 @@
+.divisions{
+    /* background-color: green; */
+    
+    /* margin-top: 100px; */
+    padding: 25px 0px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.divisions p{
+    font-family:Arial, Helvetica, sans-serif;
+    /* color: darkorange; */
+    font-size: 15px;
+}
+#main-div-main{
+    margin-top:70px;
+}
+#one,#two,#three,#four,#five,#six,#seven,#eight{
+    height: 90px;
+    width: 90px;
+    background-size: cover;
+    background-color: rgba(255, 166, 0, 0.388);
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+#one{
+    background-image: url("../images/Dog.png");   
+}
+#two{
+    background-image: url("../images/cat.png");
+}
+#three{
+    background-image: url("../images/puppy.png");
+}
+#four{
+    background-image: url("../images/kitty.png");
+}
+#five{
+    background-image: url("../images/bird.png");
+}
+#six{
+    background-image: url("../images/reptile.png");
+}
+#seven{
+    background-image: url("../images/mouse.png");
+}
+#eight{
+    background-image: url("../images/fish.png");
+}
+.img-div{
+    transition: transform 0.5s;
+}
+.img-div:hover{
+    transform: scale(1.04);
+}
+
+/* @media screen and (max-width:576) {
+    .images-carousal
+} */

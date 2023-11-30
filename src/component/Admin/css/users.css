@@ -1,0 +1,32 @@
+.imgdiv{
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    overflow: hidden;
+    border-radius: 50%;
+    
+}
+.listmain{
+    display: flex;
+    justify-content: space-between;
+}
+.ad-user-badge{
+    display: flex;
+   align-self: flex-end;
+   justify-content: center;
+   align-items: center;
+}
+.ad-bage{
+    display: flex;
+    justify-content: flex-end;
+}
+.ad-user-mail-div{
+    display: flex;
+    align-items: center;
+}
+.ad-user-img-div{
+    display: flex;
+    justify-content: center;
+}

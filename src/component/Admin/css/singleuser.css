@@ -1,0 +1,9 @@
+.single-img-div{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    align-items: center;
+    background-color: rgb(255, 98, 0);
+}

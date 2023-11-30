@@ -1,0 +1,32 @@
+.ad-main-div{
+    /* background-color: rgba(0, 0, 0, 0.265); */
+    height: 100vh;
+
+}
+.admin-main{
+    background-color: rgba(255, 255, 255, 0.797);
+}
+.ad-user-div,.ad-items-div{
+    margin-top: 180px;
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 20px;
+}
+.ad-col-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ad-user-div{
+    background-image: url("../pictures/users.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.ad-items-div{
+    background-image: url("../pictures/items.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+

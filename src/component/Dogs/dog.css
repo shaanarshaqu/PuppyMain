@@ -1,0 +1,15 @@
+.card-row{
+    justify-content: center;
+    
+}
+.dog-section{
+    margin-top: 80px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.dog-section Button{
+    background-color: rgba(255, 166, 0, 0.726);
+}
+.h5-dog{
+    color: darkorange;
+}
