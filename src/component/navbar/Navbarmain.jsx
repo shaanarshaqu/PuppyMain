@@ -5,12 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 //for icon
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import Form from "react-bootstrap/Form";
-import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import Offcanvas from "react-bootstrap/Offcanvas";
-import Badge from "react-bootstrap/Badge";
-import { IoLogOut } from "react-icons/io5";
+
 
 function Navbarmain({
   state,
@@ -136,22 +131,7 @@ function Navbarmain({
                       login
                     </Button>
                   </>
-                ) : (
-                  <>
-                    <span
-                      style={{
-                        width: "50px",
-                        overflow: "hidden",
-                        height: "50px",
-                        borderRadius: "50%",
-                      }}
-                    >
-                      <img
-                        src={usermail.image}
-                        style={{ width: "30px", height:"30px",borderRadius: "50%" }}
-                        className="img-fluid" onClick={()=>setShow(true)}
-                      />
-                    </span>
+                ) 
                     <Button
                       variant="light"
                       style={{ marginLeft: "10px", alignItems: "center" }}
