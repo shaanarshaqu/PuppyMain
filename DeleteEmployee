@@ -1,0 +1,49 @@
+public EmployeeDTO DeleteEmployee(int id)
+{
+    EmployeeDTO deletedEmp = null;
+
+    try
+    {
+        using (SqlConnection conn = new SqlConnection(connectionString))
+        {
+            SqlCommand selectCmd = new SqlCommand("SELECT Id, Name, Gender, Salary FROM Employees WHERE Id=@id", conn);
+            selectCmd.Parameters.AddWithValue("@id", id);
+
+            conn.Open();
+
+            // Fetch details of the employee before deletion
+            using (SqlDataReader reader = selectCmd.ExecuteReader())
+            {
+                if (reader.Read())
+                {
+                    deletedEmp = new EmployeeDTO
+                    {
+                        Id = Convert.ToInt32(reader["Id"]),
+                        Name = reader["Name"].ToString(),
+                        Gender = reader["Gender"].ToString(),
+                        Salary = Convert.ToDecimal(reader["Salary"])
+                    };
+                }
+            }
+
+            // Delete the employee
+            SqlCommand deleteCmd = new SqlCommand("DELETE FROM Employees WHERE Id=@id", conn);
+            deleteCmd.Parameters.AddWithValue("@id", id);
+
+            int res = deleteCmd.ExecuteNonQuery();
+
+            if (res == 0)
+            {
+                // Handle the case where no rows were affected (employee not found)
+                return null;
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex.Message);
+        return null;
+    }
+
+    return deletedEmp;
+}
